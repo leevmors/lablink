@@ -78,6 +78,12 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+
+  /* Add this to prevent vertical scrolling globally */
+  html,
+  body {
+    overflow-y: hidden;
+  }
 }
 
 @layer utilities {
@@ -90,7 +96,8 @@
     }
 
     html, body {
-      overflow-x: hidden;
+      overflow-x: hidden; /* Keep existing horizontal scroll prevention */
+      /* overflow-y: hidden; will be inherited from the global rule or can be reiterated here if needed */
     }
   }
 }
