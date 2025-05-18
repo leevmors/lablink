@@ -19,10 +19,15 @@ export const Header = () => {
         </ul>
       </nav>
       <div className="flex items-center md:justify-self-center">
-        <img src="/mdi_tooth.png" alt="Tooth icon" className="w-5 h-5 mr-2 md:w-6 md:h-6" />
-        <h1 className="text-xl font-bold text-gray-800 font-['Inter'] md:text-2xl">
-          LABLINK
-        </h1>
+        <div className="flex items-center">
+          <img src="/mdi_tooth.png" alt="Tooth icon" className="w-5 h-5 mr-2 md:w-6 md:h-6" />
+          <h1 className="text-xl font-bold text-gray-800 font-['Inter'] md:text-2xl">
+            LABLINK
+          </h1>
+        </div>
+        <span className="ml-2 bg-gray-400 text-white text-xs font-semibold px-2 py-0.5 rounded-md">
+          v1.0
+        </span>
       </div>
       <button className="text-gray-800 hover:text-gray-600 transition-colors duration-200 md:justify-self-end">
         <Menu size={24} />
