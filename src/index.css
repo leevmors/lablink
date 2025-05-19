@@ -89,8 +89,8 @@
 @layer utilities {
   @screen lg {
     .desktop-zoom-effect {
-      width: calc(100vw / 1.5);
-      transform: scale(1.5);
+      width: calc(100vw / 1.25);
+      transform: scale(1.25);
       transform-origin: top center;
       /* mx-auto is applied on the element in App.tsx */
     }
